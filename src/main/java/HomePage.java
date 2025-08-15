@@ -91,6 +91,23 @@ public class HomePage {
         actions.moveToElement(unitCard(driver)).click().build().perform();
     }
 
+    public WebElement selectUnitType(WebDriver driver){
+        return driver.findElement(By.xpath("//button[text()='Unit Type']"));
+    }
+
+    public void clickSelectUnitType(WebDriver driver){
+        selectUnitType(driver).click();
+    }
+
+    public WebElement unitCardSingleRoom(WebDriver driver){
+        return driver.findElement(By.xpath("//div[@class=\"unit-type-card\"]"));
+    }
+
+    public void clickUnitCardSingleRoom(WebDriver driver){
+        Actions actions = new Actions(driver);
+        actions.moveToElement(unitCardSingleRoom(driver)).click().build().perform();
+    }
+
     public WebElement confirm(WebDriver driver){
         return driver.findElement(By.xpath("//span[text()='Confirm']"));
     }

@@ -25,7 +25,9 @@ public class ReservationTest extends TestBase{
         homePage.clickReservationDropDown(driver);
         homePage.clickReservationOption(driver);
         homePage.clickSelectUnit(driver);
-        homePage.clickUnitCard(driver);
+//        homePage.clickUnitCard(driver);
+        homePage.clickSelectUnitType(driver);
+        homePage.clickUnitCardSingleRoom(driver);
         homePage.clickConfirm(driver);
         Thread.sleep(1000);
         homePage.clickSelectGuest(driver);
